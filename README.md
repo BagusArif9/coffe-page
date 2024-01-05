@@ -11,7 +11,7 @@ Clone repository
 
 git clone https://github.com/BagusArif9/coffe-page
 
-![Web preview](./assets/slide/preiview.png)
+![Web preview](./preview.png)
 
 
 Enjoy your coffee and explore this site for more information about the world of coffee! ☕️
