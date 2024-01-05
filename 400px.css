@@ -1,0 +1,197 @@
+/* For screens 400px or smaller */
+@media screen and (max-width: 426px) {
+  .logos img {
+    max-width: 80px; /* Reduce the max-width to make the logos smaller */
+    padding-left: 20px; /* Move the logos up by reducing left padding */
+    padding-top: -20px; /* Reduce top padding to move the logos up */
+  }
+
+  /* You can also adjust other styles for the navbar if needed */
+  .navbar a {
+    padding-right: 20px; /* Reduce right padding for navigation items */
+    padding-top: 20px; /* Reduce top padding for navigation items */
+    font-size: 14px; /* Reduce font size for navigation text */
+  }
+
+  /* =====About Section====== */
+  .about-section {
+    flex-direction: column; /* Change to a column layout */
+    text-align: center; /* Center the items vertically */
+  }
+
+  .left,
+  .right {
+    flex: none; /* Prevent items from growing */
+    width: 100%; /* Make them take the full width of the container */
+    padding: 10px; /* Adjust spacing */
+  }
+
+  /* =========Image Section========= */
+
+  .image-resize1 {
+    padding-right: 40px;
+    padding-top: 40px;
+    max-width: 350px;
+  }
+  .image-resize2 {
+    padding-right: 70px;
+    padding-bottom: 60px;
+    max-width: 350px;
+  }
+  .image-resize3 {
+    padding-right: 30px;
+    width: 250px;
+  }
+  .image-resize4 {
+    padding-right: 50px;
+    padding-bottom: 40px;
+    max-width: 350px;
+  }
+
+  /* =========Product Section======= */
+  .container-product {
+    background: url("assets/bg2.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    height: 100%;
+    width: auto;
+    display: flex;
+    background-color: #f0f0f0;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .col-md-6 {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .left-pane,
+  .right-pane {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .content-upper-left-pane,
+  .content-lower-left-pane {
+    flex: 1 solid #333;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .content-upper-left-pane h2 {
+    position: absolute;
+    font-size: 20px;
+    margin: 160px 0px 0px 0px;
+  }
+
+  .content-upper-left-pane p {
+    margin: 200px 110px 0px 0px;
+    position: absolute;
+  }
+
+  .image .bgProduct {
+    position: relative;
+    width: 100%;
+    max-width: 150px;
+    left: 0px;
+  }
+  .image .product {
+    position: relative;
+    width: 100%;
+    max-width: 100px;
+    left: 25px;
+    top: -150px;
+  }
+
+  .left-pane {
+    flex: 3;
+    width: 200px;
+  }
+
+  /* lower left page */
+  .items-under-bgProduc ul {
+    font-size: 14px;
+    font-weight: 300;
+    margin:50px 0px 0px -40px;
+    list-style-type: none; /* Remove the default list bullet */
+    padding-top: 20px; /* Remove default padding */
+    display: flex; /* Display the list items in a single line */
+    overflow-x: auto; /* Add horizontal scroll if needed */
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .content-lower-left-pane .items-under-bgProduc ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  /* if want to set margin */
+  .content-lower-left-pane {
+    margin: 50px 0px 0px 0px;
+  }
+
+  .items-under-bgProduc li {
+    margin-top: 0px;
+    position: relative; /* Make the li element a positioning context */
+  }
+
+  .items-under-bgProduc li::before {
+    content: ""; /* Empty content */
+    display: inline-block; /* Display the pseudo-element as inline-block */
+    width: 25px; /* Adjust the width of the pseudo-element (spacing between image and text) */
+    height: 25px; /* Adjust the height of the pseudo-element (spacing between image and text) */
+    background-size: cover; /* Ensure the background image covers the pseudo-element */
+    background-repeat: no-repeat; /* Prevent background image repetition */
+    background-position: center; /* Center the background image */
+    margin-right: 5px; /* Add some spacing between the image and the text (adjust as needed) */
+  }
+
+  .items-under-bgProduc li[data-image="item1.jpg"]::before {
+    background-image: url("assets/sugar.png"); /* Set the background image for Item 1 */
+    position: relative;
+  }
+
+  .items-under-bgProduc li[data-image="item2.jpg"]::before {
+    background-image: url("assets/coffeIngredient.png"); /* Set the background image for Item 2 */
+    position: relative;
+  }
+
+  .items-under-bgProduc li[data-image="item3.jpg"]::before {
+    background-image: url("assets/badge.png"); /* Set the background image for Item 3 */
+    position: relative;
+  }
+
+  .right-pane {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+    height: 550px;
+  }
+
+  .right-pane .rSide {
+    position: relative;
+    align-self: flex-end;
+    top: 120px;
+    right: 0px;
+    max-width: 100%;
+    width: 80px;
+  }
+
+  .right-pane .product-list {
+    flex-direction: column;
+    position: relative;
+    top: -130px;
+    right: 10px;
+    max-width: 100%;
+    width: 60px;
+  }
+}

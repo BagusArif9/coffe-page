@@ -1,0 +1,503 @@
+/* Set background image for the navbar and hero section */
+
+html,
+body,
+.container {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+/* body::-webkit-scrollbar {
+  display: none;
+} */
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px 20px;
+  color: white;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+}
+
+/* Style the logos on the left side */
+.logos img {
+  max-width: 100px; /* Adjust the max-width as needed */
+  padding-left: 150px;
+  padding-top: 20px;
+}
+
+/* Style the navbar on the right side */
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 20px; /* Add space between navigation items */
+}
+
+.navbar a {
+  padding-right: 150px;
+  padding-top: 50px;
+  text-decoration: none;
+  font-size: 32px;
+  color: white; /* Change the link color as needed */
+  font-weight: bold; /* Optionally make the text bold */
+}
+
+/* Add hover effect for navbar links */
+.navbar a:hover {
+  text-decoration: underline; /* Underline on hover, change as needed */
+}
+
+/* Style the hero section */
+#hero-section {
+  background: url("assets/bg1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-image {
+  max-width: 100%;
+  max-height: 50vh;
+  width: auto;
+  height: auto;
+}
+
+#hero-section h1 {
+  font-size: 60px;
+  color: white;
+  margin-top: 150px; 
+}
+
+
+
+/* =======About Section========== */
+
+.about-section {
+  background: url("assets/bg2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  height: 100%;
+  width: auto;
+  display: flex;
+  justify-content: space-between; /* Arrange items in a row with space between them */
+  align-items: center; /* Vertically center items */
+  padding: 20px; /* Add some spacing around the container */
+}
+
+/* Style the left content */
+.left {
+  flex: 1; /* Allow the left content to grow and take available space */
+  padding: 20px; /* Add some spacing around the left content */
+  background-color: none; /* Set a background color for the left side */
+}
+
+.left h1 {
+  padding-bottom: 20px;
+  font-size: 64px; /* Customize heading font size */
+  margin-bottom: 10px; /* Add space below the heading */
+}
+.left p {
+  padding-bottom: 25px;
+  font-size: 32px; /* Customize heading font size */
+  margin-bottom: 10px; /* Add space below the heading */
+}
+
+/* Style the right content (image) */
+.right {
+  flex: 1; /* Allow the right content to grow and take available space */
+  text-align: center; /* Center the image horizontally */
+}
+
+.right img {
+  max-width: 90%; /* Ensure the image doesn't exceed its container's width */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+/* inline text */
+.inline-text {
+  margin-top: 10px; /* Add spacing between the paragraph and inline text */
+  text-align: center; /* Center the inline text horizontally */
+}
+
+.inline-text span {
+  display: inline-block; /* Make the text elements inline */
+  margin: 0 10px; /* Add spacing between the inline text elements */
+  font-size: 26px; /* Customize the font size */
+  color: #333; /* Customize the text color */
+}
+
+/* ==========Image Section=========== */
+#image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("assets/bg1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: auto;
+  overflow-x: hidden;
+}
+
+/* Style for the first image */
+.image-resize1 {
+  width: 650px; /* Set the desired width for image 1 */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the second image */
+.image-resize2 {
+  padding-left: 20px;
+  width: 400px; /* Set the desired width for image 2 */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the third image */
+.image-resize3 {
+  padding-top: 20px;
+  width: 350px; /* Set the desired width for image 3 */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the fourth image */
+.image-resize4 {
+  padding-left: 20px;
+  width: 700px; /* Set the desired width for image 4 */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* =========Product Section========== */
+.container-product {
+  background: url("assets/bg2.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+  width: auto;
+  display: flex;
+  background-color: #f0f0f0;
+}
+
+.row {
+  display: flex;
+}
+
+.col-md-6 {
+  flex: 1;
+  padding: 10px;
+}
+
+.left-pane,
+.right-pane {
+  flex: 1;
+  padding: 20px;
+}
+
+.content-upper-left-pane,
+.content-lower-left-pane {
+  flex: 1 solid #333;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.content-upper-left-pane h2{
+  position: absolute;
+  font-size: 64px;
+  margin: 100px 0 0 500px;
+}
+
+.content-upper-left-pane p{
+  margin: 250px 500px 0 500px;
+  position: absolute;
+  
+}
+
+.image .bgProduct {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  left: 20px;
+}
+.image .product {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  right: 340px;
+}
+
+.product,
+.product-list {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.left-pane {
+  flex: 3;
+}
+
+/* lower left page */
+.items-under-bgProduc ul {
+  font-size: 24px;
+  font-weight: 300;
+  list-style-type: none; /* Remove the default list bullet */
+  padding-top: 20px; /* Remove default padding */
+  display: flex; /* Display the list items in a single line */
+  overflow-x: auto; /* Add horizontal scroll if needed */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden;
+}
+.content-lower-left-pane .items-under-bgProduc ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* if want to set margin */
+.content-lower-left-pane{
+  margin: 0px 0px 0px 0px;
+}
+
+
+.items-under-bgProduc li {
+  position: relative; /* Make the li element a positioning context */
+  margin-right: 10px; /* Add some spacing between the inline items (adjust as needed) */
+  margin-bottom: 20px; /* Move the li elements 20px up from the bottom of the text */
+}
+
+.items-under-bgProduc li::before {
+  content: ""; /* Empty content */
+  display: inline-block; /* Display the pseudo-element as inline-block */
+  width: 80px; /* Adjust the width of the pseudo-element (spacing between image and text) */
+  height: 80px; /* Adjust the height of the pseudo-element (spacing between image and text) */
+  background-size: cover; /* Ensure the background image covers the pseudo-element */
+  background-repeat: no-repeat; /* Prevent background image repetition */
+  background-position: center; /* Center the background image */
+  margin-right: 5px; /* Add some spacing between the image and the text (adjust as needed) */
+}
+
+.items-under-bgProduc li[data-image="item1.jpg"]::before {
+  background-image: url("assets/sugar.png"); /* Set the background image for Item 1 */
+  position: relative;
+}
+
+.items-under-bgProduc li[data-image="item2.jpg"]::before {
+  background-image: url("assets/coffeIngredient.png"); /* Set the background image for Item 2 */
+  position: relative;
+}
+
+.items-under-bgProduc li[data-image="item3.jpg"]::before {
+  background-image: url("assets/badge.png"); /* Set the background image for Item 3 */
+  position: relative;
+}
+
+.right-pane {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-end;
+  /* background-color: #d0d0d0; */
+  height: 640px;
+}
+
+.right-pane .rSide {
+  position: relative;
+  align-self: flex-end;
+  top: 80px;
+  right: 100px;
+  max-width: 100%;
+  width: 150px;
+}
+
+
+.right-pane .product-list {
+  list-style: none;
+  cursor: pointer;
+  flex-direction: column;
+  position: relative;
+  top: -400px;
+  right: 110px;
+  max-width: 100%;
+  width: 120px;
+  transform: 0.3s;
+  -webkit-transform: 0.3s;
+  -moz-transform: 0.3s;
+  -ms-transform: 0.3s;
+  -o-transform: 0.3s;
+}
+
+.right-pane .product-list:hover {
+  transform:translateY(-10px);
+  -webkit-transform:translateY(-10px);
+  -moz-transform:translateY(-10px);
+  -ms-transform:translateY(-10px);
+  -o-transform:translateY(-10px);
+}
+
+
+
+
+
+/* ========Best Drinks Section======== */
+
+.slider-container {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("assets/sliceBg.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  height: 100%;
+  width: auto;
+}
+
+.slider-container {
+  padding: 0px 80px 0px 80px;
+  gap: 2em;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+.slide {
+  background-color: none;
+  border-radius: 25px;
+  height: auto;
+  float: left;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.slide:hover {
+  transform: scale(1.05); /* Increase scale on hover */
+  background:url("assets/bg1.jpg"); 
+  background-position: center;
+  transform: scale(1.05);
+  border: 5px solid #fff; 
+
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.description {
+  background:none;
+  padding: 20px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.description h2 {
+  margin-top: 0;
+}
+
+
+.description img {
+  width: 100px;
+}
+
+#price {
+  font-weight: bold;
+}
+
+
+
+
+/* ========Fotter Section========== */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: url("assets/bg2.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+  width: auto;
+  flex-direction: column;
+}
+
+.lower-column {
+  display: flex;
+  flex: 1;
+}
+
+.upper-column {
+  flex: 3;
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+}
+
+.upper-column iframe{
+  width: 100%;
+  height: 600px;
+}
+
+.upper-column img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.lower-column-right {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-lower, .right-lower {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.left-lower{
+  padding-left: 50px;
+}
+
+.right-lower{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.right-lower img {
+  position: relative;
+  padding-right:50px ;
+  width: 120px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

@@ -1,0 +1,241 @@
+/* Media query for screens 1200px or wider */
+@media screen and (max-width: 1200px) {
+  /* ================Navbar============== */
+  .logos img {
+    padding-left: 50px;
+    transition: padding-left 0.3s ease;
+    -webkit-transition: padding-left 0.3s ease;
+    -moz-transition: padding-left 0.3s ease;
+    -ms-transition: padding-left 0.3s ease;
+    -o-transition: padding-left 0.3s ease;
+  }
+  .navbar a {
+    padding-right: 50px;
+    transition: padding-right 0.3s ease ease;
+    -webkit-transition: padding-right 0.3s ease ease;
+    -moz-transition: padding-right 0.3s ease ease;
+    -ms-transition: padding-right 0.3s ease ease;
+    -o-transition: padding-right 0.3s ease ease;
+  }
+  .logos img {
+    padding-left: 150px; /* Revert to the original value */
+    transition: padding-left 0.3s ease; /* Add a smooth transition for padding-left */
+  }
+  .navbar a {
+    padding-right: 150px; /* Revert to the original value */
+    transition: padding-right 0.3s ease; /* Add a smooth transition for padding-right */
+  }
+
+  /* ==============Hero Section==================== */
+  #image-section .left-side2,
+  #image-section .right-side2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure images wrap to the next line if needed */
+  }
+
+  #image-section .left-side2 img:nth-child(1) {
+    width: 500px;
+    top: -50px;
+    margin-left: 50px; /* Add margin between the images */
+  }
+
+  #image-section .left-side2 img:nth-child(2) {
+    width: 400px;
+    top: -50px;
+    margin-left: 50px;
+  }
+
+  #image-section .right-side2 img:nth-child(1) {
+    position: relative;
+    width: 325px;
+    bottom: 40px;
+    margin-left: 20px; /* Add margin between the images */
+  }
+
+  #image-section .right-side2 img:nth-child(2) {
+    width: 575px;
+    bottom: 20px;
+    margin-left: 30px; /* Add margin between the images */
+  }
+
+  /* =======About Section======= */
+  .about-section {
+    flex-direction: row; /* Change back to a row layout */
+    text-align: initial; /* Reset text alignment */
+  }
+
+  .left,
+  .right {
+    flex: 1; /* Allow items to grow again */
+    width: auto; /* Reset width */
+    padding: 20px; /* Reset spacing */
+  }
+
+  /* =========Image Section========= */
+  .image-resize1 {
+    padding-top: 40px;
+    width: 300px;
+  }
+  .image-resize2 {
+    padding-top: 40px;
+    width: 300px;
+    padding-right: 10px;
+  }
+  .image-resize3 {
+    padding-top: 80px;
+    width: 250px;
+  }
+  .image-resize4 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 500px;
+  }
+
+  /* ========Product Section========== */
+
+  .container-product {
+    background: url("assets/bg2.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    height: 100%;
+    width: auto;
+    display: flex;
+    background-color: #f0f0f0;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .col-md-6 {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .left-pane,
+  .right-pane {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .content-upper-left-pane,
+  .content-lower-left-pane {
+    flex: 1 solid #333;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .content-upper-left-pane h2 {
+    position: absolute;
+    font-size: 64px;
+    margin-left: 350px;
+  }
+
+  .content-upper-left-pane p {
+    margin: 210px 260px 0 350px;
+    position: absolute;
+  }
+
+  .image .bgProduct {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    left: 20px;
+  }
+  .image .product {
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+    right: 235px;
+  }
+
+  .left-pane {
+    flex: 3;
+  }
+
+  /* lower left page */
+  .items-under-bgProduc ul {
+    font-size: 24px;
+    font-weight: 300;
+    list-style-type: none; /* Remove the default list bullet */
+    padding-top: 20px; /* Remove default padding */
+    display: flex; /* Display the list items in a single line */
+    overflow-x: auto; /* Add horizontal scroll if needed */
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden;
+  }
+  .content-lower-left-pane .items-under-bgProduc ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  /* if want to set margin */
+  .content-lower-left-pane {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .items-under-bgProduc li {
+    margin-top: 60px;
+    position: relative; /* Make the li element a positioning context */
+    margin-right: 10px; /* Add some spacing between the inline items (adjust as needed) */
+    margin-bottom: 20px; /* Move the li elements 20px up from the bottom of the text */
+  }
+
+  .items-under-bgProduc li::before {
+    content: ""; /* Empty content */
+    display: inline-block; /* Display the pseudo-element as inline-block */
+    width: 80px; /* Adjust the width of the pseudo-element (spacing between image and text) */
+    height: 80px; /* Adjust the height of the pseudo-element (spacing between image and text) */
+    background-size: cover; /* Ensure the background image covers the pseudo-element */
+    background-repeat: no-repeat; /* Prevent background image repetition */
+    background-position: center; /* Center the background image */
+    margin-right: 5px; /* Add some spacing between the image and the text (adjust as needed) */
+  }
+
+  .items-under-bgProduc li[data-image="item1.jpg"]::before {
+    background-image: url("assets/sugar.png"); /* Set the background image for Item 1 */
+    position: relative;
+  }
+
+  .items-under-bgProduc li[data-image="item2.jpg"]::before {
+    background-image: url("assets/coffeIngredient.png"); /* Set the background image for Item 2 */
+    position: relative;
+  }
+
+  .items-under-bgProduc li[data-image="item3.jpg"]::before {
+    background-image: url("assets/badge.png"); /* Set the background image for Item 3 */
+    position: relative;
+  }
+
+  .right-pane {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+    height: 550px;
+  }
+
+  .right-pane .rSide {
+    position: relative;
+    align-self: flex-end;
+    top: 30px;
+    right: 0px;
+    max-width: 100%;
+    width: 150px;
+  }
+
+  .right-pane .product-list {
+    flex-direction: column;
+    position: relative;
+    top: -450px;
+    right: 15px;
+    max-width: 100%;
+    width: 120px;
+  }
+}

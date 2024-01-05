@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Submission Bagus Arif Arikusworo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="1200px.css" />
+    <link rel="stylesheet" href="800px.css" />
+    <link rel="stylesheet" href="400px.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Header Navbar -->
+    <header class="header">
+      <a class="logos">
+        <img src="assets/logos.png" alt="Logo" />
+      </a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#about-section">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section id="hero-section">
+        <div class="container">
+          <h1>
+            Good Drinks
+            <br />
+            Good Moods
+          </h1>
+          <img src="assets/coffe.png" alt="Logo" id="hero-image" />
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about-section">
+        <article class="about-section">
+          <div class="content left">
+            <h1>About Us</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur commodi sunt quo ipsa expedita beatae natus fuga possimus, dolorum recusandae optio sequi dolor neque repellendus.
+            </p>
+            <div class="inline-text">
+              <span>250<br />Coffe Place</span>
+              <span>18 <br />Coffe Varieties</span>
+              <span>11 <br />Food Choice</span>
+            </div>
+          </div>
+          <div class="content right">
+            <img src="assets/coffe2.png" alt="about-coffe" id="about-coffee" />
+          </div>
+        </article>
+      </section>      
+
+      <!-- Image section -->
+      <section id="image-section">
+        <div class="image-container">
+          <div class="left-side2">
+            <img
+              src="assets/picture/1.png"
+              alt="picture 1"
+              class="image-resize1"
+            />
+            <img
+              src="assets/picture/2.png"
+              alt="picture 2"
+              class="image-resize2"
+            />
+          </div>
+          <div class="right-side2">
+            <img
+              src="assets/picture/3.png"
+              alt="picture 3"
+              class="image-resize3"
+            />
+            <img
+              src="assets/picture/4.png"
+              alt="picture 4"
+              class="image-resize4"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Product section -->
+      <section id="product-section">
+        <div class="container-product">
+          <div class="left-pane">
+            <div class="content-upper-left-pane">
+              <div class="text-box">
+                <h2>Matcha Latte</h2>
+                <p id="specialParagraph">
+                  Matcha Latte...Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                  aliquet odio mattis. Class aptent taciti sociosqu ad litora
+                  torquent per conubia nostra, per inceptos himenaeos. Curabitur
+                  tempus Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Nunc vulputate libero et velit interdum, ac aliquet odio
+                  mattis. Class aptent taciti sociosqu ad litora torquent per
+                  conubia nostra, per
+                </p>
+              </div>
+              <div class="image">
+                <img src="assets/bgProduc.png" alt="Image" class="bgProduct" />
+                <img src="assets/p1.png" alt="p1" class="product" />
+              </div>
+            </div>
+            <div class="content-lower-left-pane">
+              <div class="items-under-bgProduc">
+                <ul>
+                  <li data-image="item1.jpg">Sugar Free</li>
+                  <li data-image="item2.jpg">100& Premium</li>
+                  <li data-image="item3.jpg">Chilled classic</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <aside class="right-pane">
+            <img src="assets/rSideProduc.png" alt="Image" class="rSide" />
+            <img
+              src="assets/p1.png"
+              alt="Image 1"
+              class="product-list"
+              onclick="sliderImg('p1.png', 'Matcha Latte')"
+            />
+            <img
+              src="assets/p2.png"
+              alt="Image 2"
+              class="product-list"
+              onclick="sliderImg('p2.png', 'Mocha Coffe')"
+            />
+            <img
+              src="assets/p3.png"
+              alt="Image 3"
+              class="product-list"
+              onclick="sliderImg('p3.png', 'Caramelo')"
+            />
+          </aside>
+        </div>
+      </section>
+
+      <!-- Best Drinks -->
+      <section class="Best Drinks">
+        <div class="slider-container">
+          <div class="slide">
+            <div class="description">
+              <img
+                src="assets/slide/americano.png"
+                alt="Image 1"
+                class="drink-1"
+              />
+              <h2>Americano</h2>
+              <p id="price">IDK 40K</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="description">
+              <img
+                src="assets/slide/caramel.png"
+                alt="Image 1"
+                class="drink-1"
+              />
+              <h2>Caramelo</h2>
+              <p id="price">IDK 30k</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="description">
+              <img src="assets/slide/lemon.png" alt="Image 1" class="drink-1" />
+              <h2>Lemon tea</h2>
+              <p id="price">IDK 20K</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="description">
+              <img src="assets/slide/exp.png" alt="Image 1" class="drink-1" />
+              <h2>Expreso</h2>
+              <p id="price">40K</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="upper-column">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.0674492558946!2d110.39902267500496!3d-7.782673592237048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59c293ff767d%3A0x471d2b15947b1971!2sStarbucks%20Plaza%20Ambarrukmo!5e0!3m2!1sen!2sid!4v1694231009903!5m2!1sen!2sid"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="lower-column">
+          <div class="left-lower">
+            <h3>Address</h3>
+            <p>Plaza Ambarrukmo</p>
+            <p>	Jl. Laksda Adisucipto 55281, Yogyakarta</p>
+          </div>
+          <div class="right-lower">
+            <img src="assets/logos.png" alt="Image" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
