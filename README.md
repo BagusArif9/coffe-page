@@ -8,7 +8,7 @@ JavaScript: Used to add interactivity and dynamic features to the website.
 
 # Installation
 Clone repository
-```
+
 git clone https://github.com/BagusArif9/coffe-page
 
 <div align="center">
