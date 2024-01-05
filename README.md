@@ -11,4 +11,10 @@ Clone repository
 ```
 git clone https://github.com/BagusArif9/coffe-page
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/BagusArif9/assets/preview.png" alt="preview page" style="width: 20%;">
+  <h1>ML-API</h1>
+</div>
+
+
 Enjoy your coffee and explore this site for more information about the world of coffee! ☕️
